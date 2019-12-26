@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>OOXX</title>
+<style type = "text/css">
+	div{
+		text-align:center;
+		display:flex;
+		justify-content:center;
+		align-items:center;
+	}
+	button{
+		width:33%;
+		height:190px;
+		background-color:black;
+		font-size:150px;
+		color:white;
+		border:1px solid black;
+		border-bottom:1px solid white;
+		border-right:1px solid white;
+	}
+	/*button#seven{
+		border-bottom:1px solid black;
+	}
+	button#eight{
+		border-bottom:1px solid black;
+	}*/
+	button#three{
+		border-right:1px solid black;
+	}
+	button#six{
+		border-right:1px solid black;
+	}
+	button#nine{
+		border-right:1px solid black;
+		/*border-bottom:1px solid black;*/
+	}
+	button#del{
+		width:20%;
+		height:50px;
+		background-color:white;
+		font-size:50px;
+		text-align:center;
+		color:black;
+		border:1px solid black;
+	}
+</style>
+</head>
+<body style = "background-color:black;">
+	<script type="text/javascript">
+		var count = 0;
+		function winner(id){
+			var button = document.getElementById(id);
+			if(id == "one"){
+				if(button.innerHTML == document.getElementById("two").innerHTML && button.innerHTML == document.getElementById("three").innerHTML){
+					count = 100;
+					button.style.color = "black";
+					button.style.backgroundColor = "white";
+					document.getElementById("two").style.color = "black";
+					document.getElementById("two").style.backgroundColor = "white";
+					document.getElementById("three").style.color = "black";
+					document.getElementById("three").style.backgroundColor = "white";
+					if(button.innerHTML == "O"){
+						alert("Player O win!");
+					}
+					else{
+						alert("Player X win!");
+					}
+				}
+				else if(button.innerHTML == document.getElementById("five").innerHTML && button.innerHTML == document.getElementById("nine").innerHTML){
+					count = 100;
+					button.style.color = "black";
+					button.style.backgroundColor = "white";
+					document.getElementById("five").style.color = "black";
+					document.getElementById("five").style.backgroundColor = "white";
+					document.getElementById("nine").style.color = "black";
+					document.getElementById("nine").style.backgroundColor = "white";
+					if(button.innerHTML == "O"){
+						alert("Player O win!");
+					}
+					else{
+						alert("Player X win!");
+					}
+				}
+				else if(button.innerHTML == document.getElementById("four").innerHTML && button.innerHTML == document.getElementById("seven").innerHTML){
+					count = 100;
+					button.style.color = "black";
+					button.style.backgroundColor = "white";
+					document.getElementById("four").style.color = "black";
+					document.getElementById("four").style.backgroundColor = "white";
+					document.getElementById("seven").style.color = "black";
+					document.getElementById("seven").style.backgroundColor = "white";
+					if(button.innerHTML == "O"){
+						alert("Player O win!");
+					}
+					else{
+						alert("Player X win!");
+					}
+				}
+			}
+			else if(id == "two"){
+				if(button.innerHTML == document.getElementById("one").innerHTML && button.innerHTML == document.getElementById("three").innerHTML){
+					count = 100;
+					button.style.color = "black";
+					button.style.backgroundColor = "white";
+					document.getElementById("one").style.color = "black";
+					document.getElementById("one").style.backgroundColor = "white";
+					document.getElementById("three").style.color = "black";
+					document.getElementById("three").style.backgroundColor = "white";
+					if(button.innerHTML == "O"){
+						alert("Player O win!");
+					}
+					else{
+						alert("Player X win!");
+					}
+				}
+				else if(button.innerHTML == document.getElementById("five").innerHTML && button.innerHTML == document.getElementById("eight").innerHTML){
+					count = 100;
+					button.style.color = "black";
+					button.style.backgroundColor = "white";
+					document.getElementById("five").style.color = "black";
+					document.getElementById("five").style.backgroundColor = "white";
+					document.getElementById("eight").style.color = "black";
+					document.getElementById("eight").style.backgroundColor = "white";
+					if(button.innerHTML == "O"){
+						alert("Player O win!");
+					}
+					else{
+						alert("Player X win!");
+					}
+				}
+			}
+			else if(id == "three"){
+				if(button.innerHTML == document.getElementById("two").innerHTML && button.innerHTML == document.getElementById("one").innerHTML){
+					count = 100;
+					button.style.color = "black";
+					button.style.backgroundColor = "white";
+					document.getElementById("two").style.color = "black";
+					document.getElementById("two").style.backgroundColor = "white";
+					document.getElementById("one").style.color = "black";
+					document.getElementById("one").style.backgroundColor = "white";
+					if(button.innerHTML == "O"){
+						alert("Player O win!");
+					}
+					else{
+						alert("Player X win!");
+					}
+				}
+				else if(button.innerHTML == document.getElementById("six").innerHTML && button.innerHTML == document.getElementById("nine").innerHTML){
+					count = 100;
+					button.style.color = "black";
+					button.style.backgroundColor = "white";
+					document.getElementById("six").style.color = "black";
+					document.getElementById("six").style.backgroundColor = "white";
+					document.getElementById("nine").style.color = "black";
+					document.getElementById("nine").style.backgroundColor = "white";
+					if(button.innerHTML == "O"){
+						alert("Player O win!");
+					}
+					else{
+						alert("Player X win!");
+					}
+				}
+				else if(button.innerHTML == document.getElementById("five").innerHTML && button.innerHTML == document.getElementById("seven").innerHTML){
+					count = 100;
+					button.style.color = "black";
+					button.style.backgroundColor = "white";
+					document.getElementById("five").style.color = "black";
+					document.getElementById("five").style.backgroundColor = "white";
+					document.getElementById("seven").style.color = "black";
+					document.getElementById("seven").style.backgroundColor = "white";
+					if(button.innerHTML == "O"){
+						alert("Player O win!");
+					}
+					else{
+						alert("Player X win!");
+					}
+				}
+			}
+			else if(id == "four"){
+				if(button.innerHTML == document.getElementById("one").innerHTML && button.innerHTML == document.getElementById("seven").innerHTML){
+					count = 100;
+					button.style.color = "black";
+					button.style.backgroundColor = "white";
+					document.getElementById("one").style.color = "black";
+					document.getElementById("one").style.backgroundColor = "white";
+					document.getElementById("seven").style.color = "black";
+					document.getElementById("seven").style.backgroundColor = "white";
+					if(button.innerHTML == "O"){
+						alert("Player O win!");
+					}
+					else{
+						alert("Player X win!");
+					}
+				}
+				else if(button.innerHTML == document.getElementById("five").innerHTML && button.innerHTML == document.getElementById("six").innerHTML){
+					count = 100;
+					button.style.color = "black";
+					button.style.backgroundColor = "white";
+					document.getElementById("five").style.color = "black";
+					document.getElementById("five").style.backgroundColor = "white";
+					document.getElementById("six").style.color = "black";
+					document.getElementById("six").style.backgroundColor = "white";
+					if(button.innerHTML == "O"){
+						alert("Player O win!");
+					}
+					else{
+						alert("Player X win!");
+					}
+				}
+			}
+			else if(id == "five"){
+				if(button.innerHTML == document.getElementById("one").innerHTML && button.innerHTML == document.getElementById("nine").innerHTML){
+					count = 100;
+					button.style.color = "black";
+					button.style.backgroundColor = "white";
+					document.getElementById("one").style.color = "black";
+					document.getElementById("one").style.backgroundColor = "white";
+					document.getElementById("nine").style.color = "black";
+					document.getElementById("nine").style.backgroundColor = "white";
+					if(button.innerHTML == "O"){
+						alert("Player O win!");
+					}
+					else{
+						alert("Player X win!");
+					}
+				}
+				else if(button.innerHTML == document.getElementById("three").innerHTML && button.innerHTML == document.getElementById("seven").innerHTML){
+					count = 100;
+					button.style.color = "black";
+					button.style.backgroundColor = "white";
+					document.getElementById("seven").style.color = "black";
+					document.getElementById("seven").style.backgroundColor = "white";
+					document.getElementById("three").style.color = "black";
+					document.getElementById("three").style.backgroundColor = "white";
+					if(button.innerHTML == "O"){
+						alert("Player O win!");
+					}
+					else{
+						alert("Player X win!");
+					}
+				}
+				else if(button.innerHTML == document.getElementById("two").innerHTML && button.innerHTML == document.getElementById("eight").innerHTML){
+					count = 100;
+					button.style.color = "black";
+					button.style.backgroundColor = "white";
+					document.getElementById("two").style.color = "black";
+					document.getElementById("two").style.backgroundColor = "white";
+					document.getElementById("eight").style.color = "black";
+					document.getElementById("eight").style.backgroundColor = "white";
+					if(button.innerHTML == "O"){
+						alert("Player O win!");
+					}
+					else{
+						alert("Player X win!");
+					}
+				}
+				else if(button.innerHTML == document.getElementById("four").innerHTML && button.innerHTML == document.getElementById("six").innerHTML){
+					count = 100;
+					button.style.color = "black";
+					button.style.backgroundColor = "white";
+					document.getElementById("four").style.color = "black";
+					document.getElementById("four").style.backgroundColor = "white";
+					document.getElementById("six").style.color = "black";
+					document.getElementById("six").style.backgroundColor = "white";
+					if(button.innerHTML == "O"){
+						alert("Player O win!");
+					}
+					else{
+						alert("Player X win!");
+					}
+				}
+				
+			}
+			else if(id == "six"){
+				if(button.innerHTML == document.getElementById("nine").innerHTML && button.innerHTML == document.getElementById("three").innerHTML){
+					count = 100;
+					button.style.color = "black";
+					button.style.backgroundColor = "white";
+					document.getElementById("nine").style.color = "black";
+					document.getElementById("nine").style.backgroundColor = "white";
+					document.getElementById("three").style.color = "black";
+					document.getElementById("three").style.backgroundColor = "white";
+					if(button.innerHTML == "O"){
+						alert("Player O win!");
+					}
+					else{
+						alert("Player X win!");
+					}
+				}
+				else if(button.innerHTML == document.getElementById("five").innerHTML && button.innerHTML == document.getElementById("four").innerHTML){
+					count = 100;
+					button.style.color = "black";
+					button.style.backgroundColor = "white";
+					document.getElementById("five").style.color = "black";
+					document.getElementById("five").style.backgroundColor = "white";
+					document.getElementById("four").style.color = "black";
+					document.getElementById("four").style.backgroundColor = "white";
+					if(button.innerHTML == "O"){
+						alert("Player O win!");
+					}
+					else{
+						alert("Player X win!");
+					}
+				}
+			}
+			else if(id == "seven"){
+				if(button.innerHTML == document.getElementById("one").innerHTML && button.innerHTML == document.getElementById("four").innerHTML){
+					count = 100;
+					button.style.color = "black";
+					button.style.backgroundColor = "white";
+					document.getElementById("one").style.color = "black";
+					document.getElementById("one").style.backgroundColor = "white";
+					document.getElementById("four").style.color = "black";
+					document.getElementById("four").style.backgroundColor = "white";
+					if(button.innerHTML == "O"){
+						alert("Player O win!");
+					}
+					else{
+						alert("Player X win!");
+					}
+				}
+				else if(button.innerHTML == document.getElementById("five").innerHTML && button.innerHTML == document.getElementById("three").innerHTML){
+					count = 100;
+					button.style.color = "black";
+					button.style.backgroundColor = "white";
+					document.getElementById("five").style.color = "black";
+					document.getElementById("five").style.backgroundColor = "white";
+					document.getElementById("three").style.color = "black";
+					document.getElementById("three").style.backgroundColor = "white";
+					if(button.innerHTML == "O"){
+						alert("Player O win!");
+					}
+					else{
+						alert("Player X win!");
+					}
+				}
+				else if(button.innerHTML == document.getElementById("eight").innerHTML && button.innerHTML == document.getElementById("nine").innerHTML){
+					count = 100;
+					button.style.color = "black";
+					button.style.backgroundColor = "white";
+					document.getElementById("eight").style.color = "black";
+					document.getElementById("eight").style.backgroundColor = "white";
+					document.getElementById("nine").style.color = "black";
+					document.getElementById("nine").style.backgroundColor = "white";
+					if(button.innerHTML == "O"){
+						alert("Player O win!");
+					}
+					else{
+						alert("Player X win!");
+					}
+				}
+			}
+			else if(id == "eight"){
+				if(button.innerHTML == document.getElementById("two").innerHTML && button.innerHTML == document.getElementById("five").innerHTML){
+					count = 100;
+					button.style.color = "black";
+					button.style.backgroundColor = "white";
+					document.getElementById("two").style.color = "black";
+					document.getElementById("two").style.backgroundColor = "white";
+					document.getElementById("five").style.color = "black";
+					document.getElementById("five").style.backgroundColor = "white";
+					if(button.innerHTML == "O"){
+						alert("Player O win!");
+					}
+					else{
+						alert("Player X win!");
+					}
+				}
+				else if(button.innerHTML == document.getElementById("seven").innerHTML && button.innerHTML == document.getElementById("nine").innerHTML){
+					count = 100;
+					button.style.color = "black";
+					button.style.backgroundColor = "white";
+					document.getElementById("seven").style.color = "black";
+					document.getElementById("seven").style.backgroundColor = "white";
+					document.getElementById("nine").style.color = "black";
+					document.getElementById("nine").style.backgroundColor = "white";
+					if(button.innerHTML == "O"){
+						alert("Player O win!");
+					}
+					else{
+						alert("Player X win!");
+					}
+				}
+			}
+			else if(id == "nine"){
+				if(button.innerHTML == document.getElementById("one").innerHTML && button.innerHTML == document.getElementById("five").innerHTML){
+					count = 100;
+					button.style.color = "black";
+					button.style.backgroundColor = "white";
+					document.getElementById("one").style.color = "black";
+					document.getElementById("one").style.backgroundColor = "white";
+					document.getElementById("five").style.color = "black";
+					document.getElementById("five").style.backgroundColor = "white";
+					if(button.innerHTML == "O"){
+						alert("Player O win!");
+					}
+					else{
+						alert("Player X win!");
+					}
+				}
+				else if(button.innerHTML == document.getElementById("six").innerHTML && button.innerHTML == document.getElementById("three").innerHTML){
+					count = 100;
+					button.style.color = "black";
+					button.style.backgroundColor = "white";
+					document.getElementById("six").style.color = "black";
+					document.getElementById("six").style.backgroundColor = "white";
+					document.getElementById("three").style.color = "black";
+					document.getElementById("three").style.backgroundColor = "white";
+					if(button.innerHTML == "O"){
+						alert("Player O win!");
+					}
+					else{
+						alert("Player X win!");
+					}
+				}
+				else if(button.innerHTML == document.getElementById("eight").innerHTML && button.innerHTML == document.getElementById("seven").innerHTML){
+					count = 100;
+					button.style.color = "black";
+					button.style.backgroundColor = "white";
+					document.getElementById("eight").style.color = "black";
+					document.getElementById("eight").style.backgroundColor = "white";
+					document.getElementById("seven").style.color = "black";
+					document.getElementById("seven").style.backgroundColor = "white";
+					if(button.innerHTML == "O"){
+						alert("Player O win!");
+					}
+					else{
+						alert("Player X win!");
+					}
+				}
+			}
+			/*var button1 = document.getElementById("one").innerHTML;
+			var button2 = document.getElementById("two").innerHTML;
+			var button3 = document.getElementById("three").innerHTML;
+			var button4 = document.getElementById("four").innerHTML;
+			var button5 = document.getElementById("five").innerHTML;
+			var button6 = document.getElementById("six").innerHTML;
+			var button7 = document.getElementById("seven").innerHTML;
+			var button8 = document.getElementById("eight").innerHTML;
+			var button9 = document.getElementById("nine").innerHTML;
+			if((button1 == button2 && button1 == button3 && button1 == "O")||
+			   (button1 == button4 && button1 == button7 && button1 == "O")||
+			   (button1 == button5 && button1 == button9 && button1 == "O")||
+			   (button2 == button5 && button2 == button8 && button2 == "O")||
+			   (button3 == button6 && button3 == button9 && button3 == "O")||
+			   (button3 == button5 && button3 == button7 && button3 == "O")||
+			   (button4 == button5 && button4 == button6 && button4 == "O")||
+			   (button7 == button8 && button7 == button9 && button7 == "O")){
+				alert("Player O win!");
+				count = 100;
+			}
+			if((button1 == button2 && button1 == button3 && button1 == "X")||
+			   (button1 == button4 && button1 == button7 && button1 == "X")||
+			   (button1 == button5 && button1 == button9 && button1 == "X")||
+			   (button2 == button5 && button2 == button8 && button2 == "X")||
+			   (button3 == button6 && button3 == button9 && button3 == "X")||
+			   (button3 == button5 && button3 == button7 && button3 == "X")||
+			   (button4 == button5 && button4 == button6 && button4 == "X")||
+			   (button7 == button8 && button7 == button9 && button7 == "X")){
+				alert("Player X win!");
+				count = 100;
+			}*/
+		}
+		function OX(id){
+			var button = document.getElementById(id);
+			if(button.innerHTML == "" && button.innerHTML != "clear"){
+				if(count != 100){
+					if(count%2 == 0)
+						button.innerHTML = "O";
+					else
+						button.innerHTML = "X";
+					count++;
+					winner(id);
+					if(count == 9){
+						alert("Deuce");
+					}
+				}
+			}
+		}
+		function c(){
+			var button1 = document.getElementById("one");
+			var button2 = document.getElementById("two");
+			var button3 = document.getElementById("three");
+			var button4 = document.getElementById("four");
+			var button5 = document.getElementById("five");
+			var button6 = document.getElementById("six");
+			var button7 = document.getElementById("seven");
+			var button8 = document.getElementById("eight");
+			var button9 = document.getElementById("nine");
+			count = 0;
+			alert("Clear！！！");
+			button1.innerHTML = "";
+			button2.innerHTML = "";
+			button3.innerHTML = "";
+			button4.innerHTML = "";
+			button5.innerHTML = "";
+			button6.innerHTML = "";
+			button7.innerHTML = "";
+			button8.innerHTML = "";
+			button9.innerHTML = "";
+			button1.style.color = "white";
+			button1.style.backgroundColor = "black";
+			button2.style.color = "white";
+			button2.style.backgroundColor = "black";
+			button3.style.color = "white";
+			button3.style.backgroundColor = "black";
+			button4.style.color = "white";
+			button4.style.backgroundColor = "black";
+			button5.style.color = "white";
+			button5.style.backgroundColor = "black";
+			button6.style.color = "white";
+			button6.style.backgroundColor = "black";
+			button7.style.color = "white";
+			button7.style.backgroundColor = "black";
+			button8.style.color = "white";
+			button8.style.backgroundColor = "black";
+			button9.style.color = "white";
+			button9.style.backgroundColor = "black";
+		}
+	</script>
+	<div>
+		<button id = "one" onclick = "OX('one');"></button>
+		<button id = "two" onclick = "OX('two');"></button>
+		<button id = "three" onclick = "OX('three');"></button>
+	</div>
+	<div>
+		<button id = "four" onclick = "OX('four');"></button>
+		<button id = "five" onclick = "OX('five');"></button>
+		<button id = "six" onclick = "OX('six');"></button>
+	</div>
+	<div>
+		<button id = "seven" onclick = "OX('seven');"></button>
+		<button id = "eight" onclick = "OX('eight');"></button>
+		<button id = "nine" onclick = "OX('nine');"></button>
+	</div>
+	<div>
+		<button id = "del" onclick = "c();">CLEAR</button>
+	</div>
+</body>
+</html>
